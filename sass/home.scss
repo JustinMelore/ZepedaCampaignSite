@@ -39,26 +39,60 @@ nav {
 
         a {
             font-size: 3vmin;
+            color: black;
             transition: scale 0.2s;
             &:hover {
                 scale: 1.1;
             }
+            
         }
     }
 }
 
 footer {
-    height: 30vmin;
+    min-height: 40vmin;
     display: flex;
     flex-direction: column;
     align-items: center;
     background-color: $button-color;
     color: $light-background;
     box-sizing: border-box;
-    padding: 2vmin;
+    padding: 3vmin;
 
     h1 {
-        font-size: 4vmin;
+        font-size: 5vmin;
+    }
+
+    div {
+        display: flex;
+        justify-content: space-evenly;
+        width: 60%;
+
+        a {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            filter: brightness(80%);
+            transition: filter 0.1s, scale 0.1s;
+
+            &:hover {
+                filter: brightness(100%);
+                scale: 1.1;
+            }
+
+            img {
+                width: 15vmin;
+                background-color: $light-background;
+                border-radius: 2vmin;
+                padding: 1vmin;
+            }
+
+            p {
+                font-size: 2.5vmin;
+                width: auto;
+            }
+            
+        }
     }
 }
 
@@ -70,9 +104,9 @@ footer {
     border-radius: 80px;
     font-weight: bold;
     transition: scale 0.25s;
+    color: $light-background;
     &:hover {
         scale: 1.1;
-        color: white;
     }
 }
 
