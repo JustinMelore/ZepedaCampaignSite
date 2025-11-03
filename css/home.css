@@ -37,6 +37,7 @@ nav div a {
   font-size: 3vmin;
   color: black;
   transition: scale 0.2s;
+  text-decoration: none;
 }
 nav div a:hover {
   scale: 1.1;
@@ -80,6 +81,9 @@ footer div a img {
 footer div a p {
   font-size: 2.5vmin;
   width: auto;
+}
+footer div p {
+  font-size: 0.75vmin;
 }
 
 .buttonLink {

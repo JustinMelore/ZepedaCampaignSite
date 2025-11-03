@@ -44,7 +44,7 @@ nav {
             &:hover {
                 scale: 1.1;
             }
-            
+            text-decoration: none;
         }
     }
 }
@@ -92,6 +92,10 @@ footer {
                 width: auto;
             }
             
+        }
+
+        p {
+            font-size: 0.75vmin;
         }
     }
 }
