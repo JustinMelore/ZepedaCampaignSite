@@ -1,0 +1,149 @@
+$light-background: #f2f3f6;
+$dark-blue: #36344d;
+$button-color: #2E4C6D;
+
+html {
+    width: 100%;
+    margin: 0;
+}
+
+body {
+    min-height: 100vh;
+    width: 100%;
+    margin: 0;
+}
+
+.navSelected {
+    text-decoration: underline;
+    text-underline-offset: 0.5vmin;
+}
+
+nav {
+    margin: 0;
+    display: flex;
+    position: sticky;
+    top: 0;
+    padding-left: 3vmin;
+    padding-right: 3vmin;
+    justify-content: space-between;
+    align-items: center;
+    height: 15vmin;
+    background-color: $light-background;
+    z-index: 1;
+    opacity: 90%;
+
+    div {
+        width: 60vmin;
+        display: flex;
+        justify-content: space-evenly;
+
+        a {
+            font-size: 3vmin;
+            transition: scale 0.2s;
+            &:hover {
+                scale: 1.1;
+            }
+        }
+    }
+}
+
+footer {
+    height: 30vmin;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: $button-color;
+    color: $light-background;
+    box-sizing: border-box;
+    padding: 2vmin;
+
+    h1 {
+        font-size: 4vmin;
+    }
+}
+
+.buttonLink {
+    padding: 2vmin;
+    background-color: $button-color;
+    text-decoration: none;
+    font-size: calc(1vw + 1vh);
+    border-radius: 80px;
+    font-weight: bold;
+    transition: scale 0.25s;
+    &:hover {
+        scale: 1.1;
+        color: white;
+    }
+}
+
+
+#home {
+
+    background-image: url("../images/desert.jpg");
+    background-size: 100%;
+    background-attachment: fixed;
+
+    section {
+        width: 100%;
+        display: flex;
+    }
+
+    #homeIntro {
+        height: 65vmin;
+        // background-color: $dark-blue;
+        flex-direction: column;
+        // justify-content: flex-end;
+        padding: 7vmin;
+        box-sizing: border-box;
+        color: $light-background;
+        text-shadow: black 0.25vmin 0.25vmin;
+        backdrop-filter: blur(2px);
+
+        h1 {
+            font-size: 8vmin;
+        }
+
+        h3 {
+            font-size: 4vmin;
+        }
+    }
+
+    #standFor {
+        height: 70vmin;
+        background-color: $dark-blue;
+        color: $light-background;
+        justify-content: space-evenly;
+        align-items: center;
+        box-sizing: border-box;
+        padding: 2vmin;
+
+        div {
+            width: 50%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+
+            h1 {
+                font-size: 6vmin;
+            }
+
+            p {
+                font-size: 3vmin;
+            }
+            
+            .buttonLink {
+                width: 30vmin;
+                text-align: center;
+            }
+        }
+
+        img {
+            max-height: 90%;
+            max-width: 45%;
+            border-radius: 5vmin;
+            width: auto;
+        }
+    }
+
+}

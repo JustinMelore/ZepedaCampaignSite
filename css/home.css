@@ -1,1 +1,127 @@
-/*# sourceMappingURL=home.css.map */
+html {
+  width: 100%;
+  margin: 0;
+}
+
+body {
+  min-height: 100vh;
+  width: 100%;
+  margin: 0;
+}
+
+.navSelected {
+  text-decoration: underline;
+  text-underline-offset: 0.5vmin;
+}
+
+nav {
+  margin: 0;
+  display: flex;
+  position: sticky;
+  top: 0;
+  padding-left: 3vmin;
+  padding-right: 3vmin;
+  justify-content: space-between;
+  align-items: center;
+  height: 15vmin;
+  background-color: #f2f3f6;
+  z-index: 1;
+  opacity: 90%;
+}
+nav div {
+  width: 60vmin;
+  display: flex;
+  justify-content: space-evenly;
+}
+nav div a {
+  font-size: 3vmin;
+  transition: scale 0.2s;
+}
+nav div a:hover {
+  scale: 1.1;
+}
+
+footer {
+  height: 30vmin;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #2E4C6D;
+  color: #f2f3f6;
+  box-sizing: border-box;
+  padding: 2vmin;
+}
+footer h1 {
+  font-size: 4vmin;
+}
+
+.buttonLink {
+  padding: 2vmin;
+  background-color: #2E4C6D;
+  text-decoration: none;
+  font-size: calc(1vw + 1vh);
+  border-radius: 80px;
+  font-weight: bold;
+  transition: scale 0.25s;
+}
+.buttonLink:hover {
+  scale: 1.1;
+  color: white;
+}
+
+#home {
+  background-image: url("../images/desert.jpg");
+  background-size: 100%;
+  background-attachment: fixed;
+}
+#home section {
+  width: 100%;
+  display: flex;
+}
+#home #homeIntro {
+  height: 65vmin;
+  flex-direction: column;
+  padding: 7vmin;
+  box-sizing: border-box;
+  color: #f2f3f6;
+  text-shadow: black 0.25vmin 0.25vmin;
+  backdrop-filter: blur(2px);
+}
+#home #homeIntro h1 {
+  font-size: 8vmin;
+}
+#home #homeIntro h3 {
+  font-size: 4vmin;
+}
+#home #standFor {
+  height: 70vmin;
+  background-color: #36344d;
+  color: #f2f3f6;
+  justify-content: space-evenly;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 2vmin;
+}
+#home #standFor div {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+#home #standFor div h1 {
+  font-size: 6vmin;
+}
+#home #standFor div p {
+  font-size: 3vmin;
+}
+#home #standFor div .buttonLink {
+  width: 30vmin;
+  text-align: center;
+}
+#home #standFor img {
+  max-height: 90%;
+  max-width: 45%;
+  border-radius: 5vmin;
+  width: auto;
+}/*# sourceMappingURL=home.css.map */
