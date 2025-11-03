@@ -104,6 +104,7 @@ footer div p {
   background-image: url("../images/desert.jpg");
   background-size: 100%;
   background-attachment: fixed;
+  background-repeat: no-repeat;
 }
 #home section {
   width: 100%;
@@ -111,18 +112,28 @@ footer div p {
 }
 #home #homeIntro {
   height: 65vmin;
-  flex-direction: column;
+  flex-direction: row;
   padding: 7vmin;
   box-sizing: border-box;
   color: #f2f3f6;
   text-shadow: black 0.25vmin 0.25vmin;
   backdrop-filter: blur(2px);
 }
+#home #homeIntro div {
+  flex-direction: column;
+  width: 65%;
+}
 #home #homeIntro h1 {
   font-size: 8vmin;
 }
 #home #homeIntro h3 {
   font-size: 4vmin;
+}
+#home #homeIntro img {
+  max-height: 90%;
+  max-width: 45%;
+  border-radius: 5vmin;
+  border: solid 2vmin #36344d;
 }
 #home #standFor {
   height: 70vmin;
@@ -149,12 +160,6 @@ footer div p {
 #home #standFor div .buttonLink {
   width: 30vmin;
   text-align: center;
-}
-#home #standFor img {
-  max-height: 90%;
-  max-width: 45%;
-  border-radius: 5vmin;
-  width: auto;
 }
 
 #vision {

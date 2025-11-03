@@ -124,6 +124,7 @@ footer {
     background-image: url("../images/desert.jpg");
     background-size: 100%;
     background-attachment: fixed;
+    background-repeat: no-repeat;
 
     section {
         width: 100%;
@@ -133,13 +134,18 @@ footer {
     #homeIntro {
         height: 65vmin;
         // background-color: $dark-blue;
-        flex-direction: column;
+        flex-direction: row;
         // justify-content: flex-end;
         padding: 7vmin;
         box-sizing: border-box;
         color: $light-background;
         text-shadow: black 0.25vmin 0.25vmin;
         backdrop-filter: blur(2px);
+
+        div {
+            flex-direction: column;
+            width: 65%;
+        }
 
         h1 {
             font-size: 8vmin;
@@ -148,13 +154,21 @@ footer {
         h3 {
             font-size: 4vmin;
         }
+
+        img {
+            max-height: 90%;
+            max-width: 45%;
+            border-radius: 5vmin;
+            // width: auto;
+            border: solid 2vmin $dark-blue;
+        }
     }
 
     #standFor {
         height: 70vmin;
         background-color: $dark-blue;
         color: $light-background;
-        justify-content: space-evenly;
+        justify-content: space-evenly;  
         align-items: center;
         box-sizing: border-box;
         padding: 2vmin;
@@ -178,13 +192,6 @@ footer {
                 width: 30vmin;
                 text-align: center;
             }
-        }
-
-        img {
-            max-height: 90%;
-            max-width: 45%;
-            border-radius: 5vmin;
-            width: auto;
         }
     }
 }
