@@ -155,4 +155,46 @@ footer div p {
   max-width: 45%;
   border-radius: 5vmin;
   width: auto;
+}
+
+#vision #visionIntro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 2vmin;
+}
+#vision #visionIntro h1 {
+  font-size: 7vmin;
+}
+#vision #visionIntro h3 {
+  font-size: 3vmin;
+}
+#vision .visionSection {
+  display: flex;
+  box-sizing: border-box;
+  padding: 5vmin;
+  justify-content: space-evenly;
+}
+#vision .visionSection img {
+  width: 15%;
+}
+#vision .visionSection div {
+  width: 70%;
+}
+#vision .visionSection div h1 {
+  font-size: 5vmin;
+}
+#vision .visionSection div p {
+  font-size: 3.5vmin;
+  font-style: italic;
+}
+#vision .visionSection:nth-of-type(2) {
+  background-color: #f9d706;
+}
+#vision .visionSection:nth-of-type(3) {
+  background-color: #db0001;
+}
+#vision .visionSection:nth-of-type(4) {
+  background-color: #344bcb;
 }/*# sourceMappingURL=home.css.map */

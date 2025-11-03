@@ -1,6 +1,10 @@
 $light-background: #f2f3f6;
 $dark-blue: #36344d;
 $button-color: #2E4C6D;
+$light-blue: #00a5ff;
+$desert-yellow: #f9d706;
+$red: #db0001;
+$blue: #344bcb;
 
 html {
     width: 100%;
@@ -183,5 +187,59 @@ footer {
             width: auto;
         }
     }
+}
 
+#vision {
+
+    #visionIntro {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        box-sizing: border-box;
+        padding: 2vmin;
+
+        h1 {
+            font-size: 7vmin;
+        }
+
+        h3 {
+            font-size: 3vmin;
+        }
+    }
+
+    .visionSection {
+        display: flex;
+        box-sizing: border-box;
+        padding: 5vmin;
+        justify-content: space-evenly;
+
+        img {
+            width: 15%;
+        }
+
+        div {
+            width: 70%;
+
+            h1 {
+                font-size: 5vmin;
+            }
+
+            p {
+                font-size: 3.5vmin;
+                font-style: italic;
+            }
+        }
+    }
+
+    .visionSection:nth-of-type(2) {
+        background-color: $desert-yellow;
+    }
+
+    .visionSection:nth-of-type(3) {
+        background-color: $red;
+    }
+
+    .visionSection:nth-of-type(4) {
+        background-color: $blue;
+    }
 }
