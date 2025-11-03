@@ -191,12 +191,31 @@ footer {
 
 #vision {
 
+    background-color: $dark-blue;
+
+    main {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        box-sizing: border-box;
+        // padding: 2vmin;
+    }
+
     #visionIntro {
         display: flex;
         flex-direction: column;
         align-items: center;
         box-sizing: border-box;
         padding: 2vmin;
+        color: $light-background;
+        text-shadow: black 0.25vmin 0.25vmin;
+        background-image: url("../images/desert2.jpg");
+        width: 100%;
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        height: 65vmin;
+        justify-content: center;
 
         h1 {
             font-size: 7vmin;
@@ -205,6 +224,13 @@ footer {
         h3 {
             font-size: 3vmin;
         }
+    }
+
+    #visionContainer {
+        border: 3vmin solid black;
+        border-radius: 5vmin;
+        width: 85%;
+        margin: 2vmin;
     }
 
     .visionSection {
@@ -221,25 +247,29 @@ footer {
             width: 70%;
 
             h1 {
-                font-size: 5vmin;
+                font-size: 4vmin;
             }
 
             p {
-                font-size: 3.5vmin;
+                font-size: 3vmin;
                 font-style: italic;
             }
         }
     }
 
-    .visionSection:nth-of-type(2) {
+    .visionSection:nth-of-type(1) {
         background-color: $desert-yellow;
+        border-top-left-radius: 2vmin;
+        border-top-right-radius: 2vmin;
     }
 
-    .visionSection:nth-of-type(3) {
+    .visionSection:nth-of-type(2) {
         background-color: $red;
     }
 
-    .visionSection:nth-of-type(4) {
+    .visionSection:nth-of-type(3) {
         background-color: $blue;
+        border-bottom-left-radius: 2vmin;
+        border-bottom-right-radius: 2vmin;
     }
 }

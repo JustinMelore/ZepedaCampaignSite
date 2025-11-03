@@ -157,18 +157,42 @@ footer div p {
   width: auto;
 }
 
+#vision {
+  background-color: #36344d;
+}
+#vision main {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
 #vision #visionIntro {
   display: flex;
   flex-direction: column;
   align-items: center;
   box-sizing: border-box;
   padding: 2vmin;
+  color: #f2f3f6;
+  text-shadow: black 0.25vmin 0.25vmin;
+  background-image: url("../images/desert2.jpg");
+  width: 100%;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 65vmin;
+  justify-content: center;
 }
 #vision #visionIntro h1 {
   font-size: 7vmin;
 }
 #vision #visionIntro h3 {
   font-size: 3vmin;
+}
+#vision #visionContainer {
+  border: 3vmin solid black;
+  border-radius: 5vmin;
+  width: 85%;
+  margin: 2vmin;
 }
 #vision .visionSection {
   display: flex;
@@ -183,18 +207,22 @@ footer div p {
   width: 70%;
 }
 #vision .visionSection div h1 {
-  font-size: 5vmin;
+  font-size: 4vmin;
 }
 #vision .visionSection div p {
-  font-size: 3.5vmin;
+  font-size: 3vmin;
   font-style: italic;
 }
-#vision .visionSection:nth-of-type(2) {
+#vision .visionSection:nth-of-type(1) {
   background-color: #f9d706;
+  border-top-left-radius: 2vmin;
+  border-top-right-radius: 2vmin;
 }
-#vision .visionSection:nth-of-type(3) {
+#vision .visionSection:nth-of-type(2) {
   background-color: #db0001;
 }
-#vision .visionSection:nth-of-type(4) {
+#vision .visionSection:nth-of-type(3) {
   background-color: #344bcb;
+  border-bottom-left-radius: 2vmin;
+  border-bottom-right-radius: 2vmin;
 }/*# sourceMappingURL=home.css.map */
