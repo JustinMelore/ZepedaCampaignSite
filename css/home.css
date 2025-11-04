@@ -234,6 +234,8 @@ footer div p {
 
 #support {
   background-color: #36344d;
+}
+#support section {
   color: #f2f3f6;
 }
 #support section:nth-of-type(1) {
@@ -268,4 +270,24 @@ footer div p {
   padding: 2vmin;
   border-radius: 300px;
   background-color: #f2f3f6;
+}
+#support section:nth-of-type(2) {
+  display: flex;
+  flex-direction: column;
+  height: 50vmin;
+  align-items: center;
+  text-shadow: black 0.25vmin 0.25vmin;
+  background-color: #4B496B;
+}
+#support section:nth-of-type(2) h1 {
+  font-size: 7vmin;
+}
+#support section:nth-of-type(2) p {
+  box-sizing: border-box;
+  padding: 0 7vmin;
+  font-size: 3vmin;
+  text-align: center;
+}
+#support section:nth-of-type(2) .buttonLink {
+  text-shadow: none;
 }/*# sourceMappingURL=home.css.map */
