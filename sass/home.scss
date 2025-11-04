@@ -122,9 +122,16 @@ footer {
 #home {
 
     background-image: url("../images/desert.jpg");
-    background-size: 100%;
     background-attachment: fixed;
     background-repeat: no-repeat;
+
+    @media screen and (orientation: landscape) {
+        background-size: 100%;
+    }
+
+    @media screen and (orientation: portrait) {
+        background-size: 120%;
+    }
 
     section {
         width: 100%;
