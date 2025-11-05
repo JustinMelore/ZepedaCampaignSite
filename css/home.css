@@ -175,6 +175,41 @@ footer div p {
   text-shadow: none;
 }
 
+#about {
+  background-color: #4B496B;
+}
+#about main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #f2f3f6;
+  text-shadow: black 0.25vmin 0.25vmin;
+  padding: 0 8vmin;
+  box-sizing: border-box;
+}
+#about main img {
+  border: 2vmin solid #36344d;
+  border-radius: 500px;
+  width: 35vmin;
+  margin-top: 5vmin;
+}
+#about main h1 {
+  font-size: 6vmin;
+}
+#about main p {
+  font-size: 3vmin;
+  font-style: italic;
+  margin-bottom: 0.5vmin;
+}
+#about main p span {
+  font-weight: bold;
+}
+#about main h2 {
+  font-size: 4vmin;
+  font-style: italic;
+  margin-bottom: 1vmin;
+}
+
 #vision {
   background-color: #36344d;
 }

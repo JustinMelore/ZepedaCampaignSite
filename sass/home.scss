@@ -207,6 +207,48 @@ footer {
     }
 }
 
+#about {
+
+    background-color: #4B496B;
+
+    main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: $light-background;
+        text-shadow: black 0.25vmin 0.25vmin;
+        padding: 0 8vmin;
+        box-sizing: border-box;
+
+        img {
+            border: 2vmin solid $dark-blue;
+            border-radius: 500px;
+            width: 35vmin;
+            margin-top: 5vmin;
+        }
+
+        h1 {
+            font-size: 6vmin;
+        }
+
+        p {
+            font-size: 3vmin;
+            font-style: italic;
+            margin-bottom: 0.5vmin;
+
+            span {
+                font-weight: bold;
+            }
+        }
+
+        h2 {
+            font-size: 4vmin;
+            font-style: italic;
+            margin-bottom: 1vmin;
+        }
+    }
+}
+
 #vision {
 
     background-color: $dark-blue;
