@@ -28,6 +28,11 @@ nav {
   z-index: 1;
   opacity: 90%;
 }
+nav a {
+  color: black;
+  text-decoration: none;
+  font-size: 3vmin;
+}
 nav div {
   width: 60vmin;
   display: flex;
