@@ -152,6 +152,7 @@ footer div p {
   align-items: center;
   box-sizing: border-box;
   padding: 2vmin;
+  text-shadow: black 0.25vmin 0.25vmin;
 }
 #home #standFor div {
   width: 70%;
@@ -171,6 +172,7 @@ footer div p {
 #home #standFor div .buttonLink {
   width: 30vmin;
   text-align: center;
+  text-shadow: none;
 }
 
 #vision {

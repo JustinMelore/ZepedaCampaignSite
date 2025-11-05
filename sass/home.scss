@@ -179,6 +179,7 @@ footer {
         align-items: center;
         box-sizing: border-box;
         padding: 2vmin;
+        text-shadow: black 0.25vmin 0.25vmin;
 
         div {
             width: 70%;
@@ -200,6 +201,7 @@ footer {
             .buttonLink {
                 width: 30vmin;
                 text-align: center;
+                text-shadow: none;
             }
         }
     }
