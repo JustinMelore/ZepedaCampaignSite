@@ -1,5 +1,7 @@
 $light-background: #f2f3f6;
 $dark-blue: #36344d;
+$purple: #4B496B;
+$light-purple: #7977a2;
 $button-color: #2E4C6D;
 $light-blue: #00a5ff;
 $desert-yellow: #f9d706;
@@ -226,7 +228,7 @@ footer {
         text-shadow: black 0.25vmin 0.25vmin;
         padding: 0 8vmin;
         box-sizing: border-box;
-        background-color: #4B496B;
+        background-color: $purple;
 
         img {
             border: 2vmin solid $dark-blue;
@@ -307,6 +309,8 @@ footer {
         box-sizing: border-box;
         padding: 5vmin;
         justify-content: space-evenly;
+        color: $light-background;
+        text-shadow: 0.25vmin 0.25vmin black;
 
         img {
             width: 15%;
@@ -327,17 +331,17 @@ footer {
     }
 
     .visionSection:nth-of-type(1) {
-        background-color: $desert-yellow;
+        background-color: $purple;
         border-top-left-radius: 2vmin;
         border-top-right-radius: 2vmin;
     }
 
     .visionSection:nth-of-type(2) {
-        background-color: $red;
+        background-color: $light-purple;
     }
 
     .visionSection:nth-of-type(3) {
-        background-color: $blue;
+        background-color: $purple;
         border-bottom-left-radius: 2vmin;
         border-bottom-right-radius: 2vmin;
     }
@@ -401,7 +405,7 @@ footer {
         min-height: 55vmin;
         align-items: center;
         text-shadow: black 0.25vmin 0.25vmin;
-        background-color: #4B496B;
+        background-color: $purple;
 
         h1 {
             font-size: 7.5vmin;
