@@ -109,6 +109,7 @@ footer div p {
   background-image: url("../images/desert.jpg");
   background-attachment: fixed;
   background-repeat: no-repeat;
+  background-color: #2E4C6D;
 }
 @media screen and (orientation: landscape) {
   #home {
@@ -181,7 +182,7 @@ footer div p {
 }
 
 #about {
-  background-color: #4B496B;
+  background-color: #2E4C6D;
 }
 #about main {
   display: flex;
@@ -191,6 +192,7 @@ footer div p {
   text-shadow: black 0.25vmin 0.25vmin;
   padding: 0 8vmin;
   box-sizing: border-box;
+  background-color: #4B496B;
 }
 #about main img {
   border: 2vmin solid #36344d;
@@ -216,13 +218,14 @@ footer div p {
 }
 
 #vision {
-  background-color: #36344d;
+  background-color: #2E4C6D;
 }
 #vision main {
   align-items: center;
   display: flex;
   flex-direction: column;
   box-sizing: border-box;
+  background-color: #36344d;
 }
 #vision #visionIntro {
   display: flex;
@@ -286,6 +289,9 @@ footer div p {
 }
 
 #support {
+  background-color: #2E4C6D;
+}
+#support main {
   background-color: #36344d;
 }
 #support section {

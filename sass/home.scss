@@ -130,6 +130,7 @@ footer {
     background-image: url("../images/desert.jpg");
     background-attachment: fixed;
     background-repeat: no-repeat;
+    background-color: $button-color;
 
     @media screen and (orientation: landscape) {
         background-size: 100%;
@@ -215,7 +216,7 @@ footer {
 
 #about {
 
-    background-color: #4B496B;
+    background-color: $button-color;
 
     main {
         display: flex;
@@ -225,6 +226,7 @@ footer {
         text-shadow: black 0.25vmin 0.25vmin;
         padding: 0 8vmin;
         box-sizing: border-box;
+        background-color: #4B496B;
 
         img {
             border: 2vmin solid $dark-blue;
@@ -257,13 +259,14 @@ footer {
 
 #vision {
 
-    background-color: $dark-blue;
+    background-color: $button-color;
 
     main {
         align-items: center;
         display: flex;
         flex-direction: column;
         box-sizing: border-box;
+        background-color: $dark-blue;
         // padding: 2vmin;
     }
 
@@ -341,7 +344,11 @@ footer {
 }
 
 #support {
-    background-color: $dark-blue;
+    background-color: $button-color;
+
+    main {
+        background-color: $dark-blue;
+    }
 
     section {
         color: $light-background;
