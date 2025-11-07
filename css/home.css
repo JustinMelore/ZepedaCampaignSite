@@ -180,6 +180,54 @@ footer div p {
   text-align: center;
   text-shadow: none;
 }
+#home #news {
+  background-color: #36344d;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-top: 2vmin solid #7977a2;
+}
+#home #news h1 {
+  color: #f2f3f6;
+  font-size: 7vmin;
+  text-shadow: 0.25vmin 0.25vmin black;
+}
+#home #news h2 {
+  color: #f2f3f6;
+  text-shadow: 0.25vmin 0.25vmin black;
+  font-size: 4.5vmin;
+  margin-top: 0;
+}
+#home #news a {
+  width: 100%;
+  text-decoration: none;
+  color: #f2f3f6;
+  box-sizing: border-box;
+  padding: 5vmin;
+  border-bottom: 1vmin solid #7977a2;
+  border-top: 1vmin solid #7977a2;
+}
+#home #news a h2 {
+  font-size: 4vmin;
+  text-shadow: 0.25vmin 0.25vmin black;
+}
+#home #news a p {
+  font-size: 2vmin;
+  font-style: italic;
+}
+#home #news a div {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+#home #news a div p {
+  width: 50%;
+  font-size: 3vmin;
+  font-style: normal;
+}
+#home #news a img {
+  max-height: 40vmin;
+}
 
 #about {
   background-color: #2E4C6D;

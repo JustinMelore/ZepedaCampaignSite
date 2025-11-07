@@ -214,6 +214,63 @@ footer {
             }
         }
     }
+
+    #news {
+        background-color: $dark-blue;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-top: 2vmin solid $light-purple;
+
+        h1 {
+            color: $light-background;
+            font-size: 7vmin;
+            text-shadow: 0.25vmin 0.25vmin black;
+        }
+
+        h2 {
+            color: $light-background;
+            text-shadow: 0.25vmin 0.25vmin black;
+            font-size: 4.5vmin;
+            margin-top: 0;
+        }
+
+        a {
+            width: 100%;
+            text-decoration: none;
+            color: $light-background;
+            box-sizing: border-box;
+            padding: 5vmin;
+            border-bottom: 1vmin solid $light-purple;
+            border-top: 1vmin solid $light-purple;
+
+            h2 {
+                font-size: 4vmin;
+                text-shadow: 0.25vmin 0.25vmin black;
+            }
+
+            p {
+                font-size: 2vmin;
+                font-style: italic;
+            }
+
+            div {
+                display: flex;
+                justify-content: space-between;
+                width: 100%;
+
+                p {
+                    width: 50%;
+                    font-size: 3vmin;
+                    font-style: normal;
+                }
+            }
+
+            img {
+                max-height: 40vmin;
+            }
+        }
+    }
 }
 
 #about {
