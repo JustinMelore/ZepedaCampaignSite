@@ -254,20 +254,42 @@ footer {
                 font-style: italic;
             }
 
-            div {
-                display: flex;
-                justify-content: space-between;
-                width: 100%;
+            @media screen and (orientation: landscape) {
+                div {
+                    display: flex;
+                    justify-content: space-between;
+                    width: 100%;
 
-                p {
-                    width: 50%;
-                    font-size: 3vmin;
-                    font-style: normal;
+                    p {
+                        width: 50%;
+                        font-size: 3vmin;
+                        font-style: normal;
+                    }
+                }
+
+                img {
+                    max-height: 40vmin;
                 }
             }
 
-            img {
-                max-height: 40vmin;
+            @media screen and (orientation: portrait) {
+                div {
+                    display: flex;
+                    justify-content: space-between;
+                    width: 100%;
+                    flex-direction: column;
+                    align-items: center;
+
+                    p {
+                        width: 100%;
+                        font-size: 3vmin;
+                        font-style: normal;
+                    }
+                }
+
+                img {
+                    width: 80%;
+                }
             }
         }
     }

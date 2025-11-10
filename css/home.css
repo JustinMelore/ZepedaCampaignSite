@@ -215,18 +215,37 @@ footer div p {
   font-size: 2vmin;
   font-style: italic;
 }
-#home #news a div {
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
+@media screen and (orientation: landscape) {
+  #home #news a div {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  #home #news a div p {
+    width: 50%;
+    font-size: 3vmin;
+    font-style: normal;
+  }
+  #home #news a img {
+    max-height: 40vmin;
+  }
 }
-#home #news a div p {
-  width: 50%;
-  font-size: 3vmin;
-  font-style: normal;
-}
-#home #news a img {
-  max-height: 40vmin;
+@media screen and (orientation: portrait) {
+  #home #news a div {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+  }
+  #home #news a div p {
+    width: 100%;
+    font-size: 3vmin;
+    font-style: normal;
+  }
+  #home #news a img {
+    width: 80%;
+  }
 }
 
 #about {
