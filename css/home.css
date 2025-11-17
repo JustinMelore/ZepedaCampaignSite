@@ -113,12 +113,12 @@ footer div p {
 }
 @media screen and (orientation: landscape) {
   #home {
-    background-size: 100%;
+    background-size: 120%;
   }
 }
 @media screen and (orientation: portrait) {
   #home {
-    background-size: 120%;
+    background-size: 200%;
   }
 }
 #home section {
@@ -126,29 +126,52 @@ footer div p {
   display: flex;
 }
 #home #homeIntro {
-  height: 65vmin;
+  min-height: 65vmin;
   flex-direction: row;
   padding: 7vmin;
   box-sizing: border-box;
   color: #f2f3f6;
   text-shadow: black 0.25vmin 0.25vmin;
   backdrop-filter: blur(2px);
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
 }
 #home #homeIntro div {
-  flex-direction: column;
-  width: 65%;
+  flex-direction: row;
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+  align-items: center;
+  max-height: 95%;
 }
 #home #homeIntro h1 {
-  font-size: 8vmin;
+  font-size: 9vmin;
+  margin: 0;
 }
 #home #homeIntro h3 {
-  font-size: 4vmin;
+  font-size: 5vmin;
 }
 #home #homeIntro img {
-  max-height: 95%;
-  max-width: 50%;
+  width: 25%;
+  box-sizing: border-box;
+  background-color: white;
+  padding: 2vmin;
+  border-radius: 35%;
+  border: solid 1vmin #36344d;
+}
+#home #homeIntro img:nth-of-type(2) {
   border-radius: 5vmin;
   border: solid 2vmin #36344d;
+  background-color: transparent;
+  padding: 0;
+  width: 30%;
+}
+#home #homeIntro .buttonLink {
+  width: 20vmin;
+  align-self: center;
+  margin-top: 3vmin;
 }
 #home #standFor {
   height: 70vmin;
