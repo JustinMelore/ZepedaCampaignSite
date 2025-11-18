@@ -58,7 +58,36 @@
         </section>
 
         <section>
-
+            <img src="images/volunteerIcon.png" alt="Volunteers Needed">
+            <h1>Want to support the campaign more directly? Sign up to volunteer below</h1>
+            <form>
+                <h1>Volunteer Sign-Up</h1>
+                <div>
+                    <label for="name">Name (First and Last)</label>
+                    <input type="text" id="name" placeholder="First and Last Name Here" required>
+                </div>
+                <div>
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="youremail@example.com" required>
+                </div>
+                <div>
+                    <label for="phoneNumber">Phone Number</label>
+                    <input type="tel" id="phoneNumber" placeholder="123-456-7890" required>
+                </div>
+                <div>
+                    <label for="volunteerType">Desired Volunteer Work</label>
+                    <select id="volunteerType">
+                        <option value="Canvas Call">Canvas Call</option>
+                        <option value="Door Knock">Door Knock</option>
+                        <option value="Public Space Signature Collection">Public Space Signature Collection</option>
+                        <option value="Media Outreach">Media Outreach</option>
+                        <option value="Content Creation">Content Creation</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </div>
+                <input id="resetButton" type="reset">
+                <input id="submitButton" type="submit">
+            </form>
         </section>
     </main>
 

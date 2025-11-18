@@ -429,4 +429,79 @@ footer div p {
 #support section:nth-of-type(2) .buttonLink {
   text-shadow: none;
   margin-bottom: 2vmin;
+}
+#support section:nth-of-type(3) {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#support section:nth-of-type(3) img {
+  width: 100vmin;
+  max-width: 75%;
+  margin-top: 5vmin;
+}
+#support section:nth-of-type(3) h1 {
+  font-size: 5vmin;
+  text-shadow: 0.25vmin 0.25vmin black;
+  text-align: center;
+  box-sizing: border-box;
+  padding: 0 2vmin;
+  width: 100%;
+}
+#support section:nth-of-type(3) form {
+  box-sizing: border-box;
+  width: 85%;
+  padding: 4vmin;
+  border: 1vmin solid #4B496B;
+  display: flex;
+  flex-direction: column;
+  background-color: #f2f3f6;
+  color: black;
+}
+#support section:nth-of-type(3) form h1 {
+  text-shadow: none;
+}
+#support section:nth-of-type(3) form div {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 3vmin;
+}
+#support section:nth-of-type(3) form label {
+  font-size: 2vmin;
+  margin-bottom: 1vmin;
+}
+#support section:nth-of-type(3) form input {
+  width: 50vmin;
+  height: 5vmin;
+  font-size: 2vmin;
+}
+#support section:nth-of-type(3) form select {
+  width: 50vmin;
+  height: 5vmin;
+  font-size: 2vmin;
+}
+#support section:nth-of-type(3) form #resetButton {
+  margin-bottom: 3vmin;
+  width: 15vmin;
+  font-size: 2vmin;
+  color: #f2f3f6;
+  background-color: #db0001;
+  border: none;
+  transition: scale 0.1s;
+  cursor: pointer;
+}
+#support section:nth-of-type(3) form #resetButton:hover {
+  scale: 1.1;
+}
+#support section:nth-of-type(3) form #submitButton {
+  width: 15vmin;
+  font-size: 2vmin;
+  color: #f2f3f6;
+  background-color: #7977a2;
+  border: none;
+  cursor: pointer;
+  transition: scale 0.1s;
+}
+#support section:nth-of-type(3) form #submitButton:hover {
+  scale: 1.1;
 }/*# sourceMappingURL=home.css.map */

@@ -517,4 +517,91 @@ footer {
             margin-bottom: 2vmin;
         }
     }
+
+    section:nth-of-type(3) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        img {
+            width: 100vmin;
+            max-width: 75%;
+            margin-top: 5vmin;
+        }
+
+        h1 {
+            font-size: 5vmin;
+            text-shadow: 0.25vmin 0.25vmin black;
+            text-align: center;
+            box-sizing: border-box;
+            padding: 0 2vmin;
+            width: 100%;
+        }
+
+        form {
+            box-sizing: border-box;
+            width: 85%;
+            padding: 4vmin;
+            // border-radius: 10%;
+            border: 1vmin solid $purple;
+            display: flex;
+            flex-direction: column;
+            background-color: $light-background;
+            color: black;
+            
+            h1 {
+                text-shadow: none;
+            }
+
+            div {
+                display: flex;
+                flex-direction: column;
+                margin-bottom: 3vmin;
+            }
+
+            label {
+                font-size: 2vmin;
+                margin-bottom: 1vmin;
+            }
+
+            input {
+                width: 50vmin;
+                height: 5vmin;
+                font-size: 2vmin;
+            }
+
+            select {
+                width: 50vmin;
+                height: 5vmin;
+                font-size: 2vmin;
+            }
+
+            #resetButton {
+                margin-bottom: 3vmin;
+                width: 15vmin;
+                font-size: 2vmin;
+                color: $light-background;
+                background-color: $red;
+                border: none;
+                transition: scale 0.1s;
+                cursor: pointer;
+                &:hover {
+                    scale: 1.1;
+                }
+            }
+
+            #submitButton {
+                width: 15vmin;
+                font-size: 2vmin;
+                color: $light-background;
+                background-color: $light-purple;
+                border: none;
+                cursor: pointer;
+                transition: scale 0.1s;
+                &:hover {
+                    scale: 1.1;
+                }
+            }
+        }
+    }
 }
