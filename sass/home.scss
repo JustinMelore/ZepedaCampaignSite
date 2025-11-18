@@ -181,25 +181,30 @@ footer {
             font-size: 5vmin;
         }
 
+        a {
+            width: 25%;
+            transition: scale 0.1s;
+
+            &:hover {
+                scale: 1.1;
+            }
+
+            img {
+                width: 100%;
+                box-sizing: border-box;
+                background-color: white;
+                padding: 2vmin;
+                border-radius: 35%;
+                border: solid 1vmin $dark-blue;
+            }
+        }
+        
         img {
             width: 25%;
-            box-sizing: border-box;
-            background-color: white;
-            padding: 2vmin;
-            border-radius: 35%;
-            border: solid 1vmin $dark-blue;
-            // max-height: 95%;
-            // max-width: 50%;
-            // border-radius: 5vmin;
-            // width: auto;
-        }
-
-        img:nth-of-type(2) {
             border-radius: 5vmin;
             border: solid 2vmin $dark-blue;
             background-color: transparent;
             padding: 0;
-            width: 30%;
         }
 
         .buttonLink {

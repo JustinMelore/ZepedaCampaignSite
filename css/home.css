@@ -153,20 +153,27 @@ footer div p {
 #home #homeIntro h3 {
   font-size: 5vmin;
 }
-#home #homeIntro img {
+#home #homeIntro a {
   width: 25%;
+  transition: scale 0.1s;
+}
+#home #homeIntro a:hover {
+  scale: 1.1;
+}
+#home #homeIntro a img {
+  width: 100%;
   box-sizing: border-box;
   background-color: white;
   padding: 2vmin;
   border-radius: 35%;
   border: solid 1vmin #36344d;
 }
-#home #homeIntro img:nth-of-type(2) {
+#home #homeIntro img {
+  width: 25%;
   border-radius: 5vmin;
   border: solid 2vmin #36344d;
   background-color: transparent;
   padding: 0;
-  width: 30%;
 }
 #home #homeIntro .buttonLink {
   width: 20vmin;
