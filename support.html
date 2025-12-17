@@ -76,7 +76,7 @@
                 </div>
                 <div>
                     <label for="volunteerType">Desired Volunteer Work</label>
-                    <select id="volunteerType" name="Work Type">
+                    <select id="volunteerType" name="Work Type" onchange="onVolunteerTypeChange(this)">
                         <option value="Canvas Call">Canvas Call</option>
                         <option value="Door Knock">Door Knock</option>
                         <option value="Public Space Signature Collection">Public Space Signature Collection</option>
@@ -85,9 +85,13 @@
                         <option value="Other">Other</option>
                     </select>
                 </div>
+                <div id="otherField" class="hidden">
+                    <label for="otherVolunteering">Describe your Desired Volunteer Work</label>
+                    <input type="text" name="Other Volunteering" id="otherVolunteering" placeholder="Enter Here">
+                </div>
                 <input id="resetButton" type="reset">
                 <input id="submitButton" type="submit">
-                <div id="submitStatus" class="hiddenStatus">Submitting Info...</div>
+                <div id="submitStatus" class="hidden">Submitting Info...</div>
             </form>
         </section>
     </main>

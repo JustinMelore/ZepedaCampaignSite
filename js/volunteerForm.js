@@ -21,3 +21,17 @@ form.addEventListener("submit", (e) => {
         }
     );
 });
+
+/**
+ * Triggers when the user selects one of the volunteer type options and will either show or hide the "other" text field in the form
+ * @param {*} selected The volunteer type that was selected
+ */
+function onVolunteerTypeChange(selected) {
+    if(selected.value == "Other") {
+        document.getElementById("otherField").className = ""
+    }
+    else {
+        document.getElementById("otherField").className = "hidden"
+        document.getElementById("otherVolunteering").value = ""
+    }
+}

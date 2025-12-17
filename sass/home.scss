@@ -591,6 +591,10 @@ footer {
                 display: flex;
                 flex-direction: column;
                 margin-bottom: 3vmin;
+
+                &.hidden {
+                    display: none;
+                }
             }
 
             label {
@@ -644,7 +648,7 @@ footer {
                 padding: 2vmin;
                 width: fit-content;
                 
-                &.hiddenStatus {
+                &.hidden {
                     display: none;
                 }
 

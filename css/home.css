@@ -496,6 +496,9 @@ footer div p {
   flex-direction: column;
   margin-bottom: 3vmin;
 }
+#support section:nth-of-type(3) form div.hidden {
+  display: none;
+}
 #support section:nth-of-type(3) form label {
   font-size: 2vmin;
   margin-bottom: 1vmin;
@@ -542,7 +545,7 @@ footer div p {
   padding: 2vmin;
   width: fit-content;
 }
-#support section:nth-of-type(3) form #submitStatus.hiddenStatus {
+#support section:nth-of-type(3) form #submitStatus.hidden {
   display: none;
 }
 #support section:nth-of-type(3) form #submitStatus.submitting {
