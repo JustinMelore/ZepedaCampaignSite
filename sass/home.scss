@@ -636,6 +636,30 @@ footer {
                     scale: 1.1;
                 }
             }
+
+            #submitStatus {
+                margin-top: 2vmin;
+                font-size: 3vmin;
+                box-sizing: border-box;
+                padding: 2vmin;
+                width: fit-content;
+                
+                &.hiddenStatus {
+                    display: none;
+                }
+
+                &.submitting {
+                    background-color: #6fbcf2AF;
+                }
+
+                &.succeeded {
+                    background-color: #37ed67AF;
+                }
+
+                &.failed {
+                    background-color: #db2323AF;
+                }
+            }
         }
     }
 }

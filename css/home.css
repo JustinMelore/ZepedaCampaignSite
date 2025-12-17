@@ -534,4 +534,23 @@ footer div p {
 }
 #support section:nth-of-type(3) form #submitButton:hover {
   scale: 1.1;
+}
+#support section:nth-of-type(3) form #submitStatus {
+  margin-top: 2vmin;
+  font-size: 3vmin;
+  box-sizing: border-box;
+  padding: 2vmin;
+  width: fit-content;
+}
+#support section:nth-of-type(3) form #submitStatus.hiddenStatus {
+  display: none;
+}
+#support section:nth-of-type(3) form #submitStatus.submitting {
+  background-color: rgba(111, 188, 242, 0.6862745098);
+}
+#support section:nth-of-type(3) form #submitStatus.succeeded {
+  background-color: rgba(55, 237, 103, 0.6862745098);
+}
+#support section:nth-of-type(3) form #submitStatus.failed {
+  background-color: rgba(219, 35, 35, 0.6862745098);
 }/*# sourceMappingURL=home.css.map */
