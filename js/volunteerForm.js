@@ -7,6 +7,12 @@ form.addEventListener("submit", (e) => {
     submissionStatus.textContent = "Submitting Info..."
     submissionStatus.className = "submitting";
 
+    let selections = document.getElementsByClassName("daySelection")
+    for(let i = 0; i < selections.length; i++) {
+        let availability = selections[i].getElementsByTagName("input")[1]
+        if(selections[i].getElementsByTagName("input")[0].checked == true && availability.value == "") availability.value = "Available"
+    }
+
     var formData = new FormData(form);
     fetch(scriptURL, { method: "POST", body: formData })
         .then((response) => {
