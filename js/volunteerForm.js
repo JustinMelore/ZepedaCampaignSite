@@ -35,3 +35,17 @@ function onVolunteerTypeChange(selected) {
         document.getElementById("otherVolunteering").value = ""
     }
 }
+
+/**
+ * Triggers when the user selects one of the checkboxes for the days of the week. Doing so will either show or hide the corresponding text field input
+ * @param {*} day 
+ */
+function onAvailabilitySelected(day) {
+    let textInput = document.getElementById(day.value)
+    if(day.checked) {
+        textInput.className = ""
+    } else {
+        textInput.className = "hidden"
+        textInput.value = ""
+    }
+}

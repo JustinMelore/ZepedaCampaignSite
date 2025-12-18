@@ -66,14 +66,17 @@
                     <label for="name">Name (First and Last)</label>
                     <input type="text" name="Name" id="name" placeholder="First and Last Name Here" required>
                 </div>
+
                 <div>
                     <label for="email">Email</label>
                     <input type="email" name="Email" id="email" placeholder="youremail@example.com" required>
                 </div>
+
                 <div>
                     <label for="phoneNumber">Phone Number</label>
                     <input type="tel" name="Phone Number" id="phoneNumber" placeholder="123-456-7890" required>
                 </div>
+
                 <div>
                     <label for="volunteerType">Desired Volunteer Work</label>
                     <select id="volunteerType" name="Work Type" onchange="onVolunteerTypeChange(this)">
@@ -85,10 +88,49 @@
                         <option value="Other">Other</option>
                     </select>
                 </div>
+
                 <div id="otherField" class="hidden">
                     <label for="otherVolunteering">Describe your Desired Volunteer Work</label>
                     <input type="text" name="Other Volunteering" id="otherVolunteering" placeholder="Enter Here">
                 </div>
+
+                <h2>Availability (Select All Applicable)</h2>
+                <div class="daySelection">
+                    <label for="sunday">Sunday</label>
+                    <input type="checkbox" value="sunday" onclick="onAvailabilitySelected(this)">
+                    <input class="hidden" type="text" placeholder="Availability Here" id="sunday" name="Sunday Availability">
+                </div>
+                <div class="daySelection">
+                    <label for="monday">Monday</label>
+                    <input type="checkbox" value="monday" onclick="onAvailabilitySelected(this)">
+                    <input class="hidden" type="text" placeholder="Availability Here" id="monday" name="Monday Availability">
+                </div>
+                <div class="daySelection">
+                    <label for="tuesday">Tuesday</label>
+                    <input type="checkbox" value="tuesday" onclick="onAvailabilitySelected(this)">
+                    <input class="hidden" type="text" placeholder="Availability Here" id="tuesday" name="Tuesday Availability">
+                </div>
+                <div class="daySelection">
+                    <label for="wednesday">Wednesday</label>
+                    <input type="checkbox" value="wednesday" onclick="onAvailabilitySelected(this)">
+                    <input class="hidden" type="text" placeholder="Availability Here" id="wednesday" name="Wednesday Availability">
+                </div>
+                <div class="daySelection">
+                    <label for="thursday">Thursday</label>
+                    <input type="checkbox" value="thursday" onclick="onAvailabilitySelected(this)">
+                    <input class="hidden" type="text" placeholder="Availability Here" id="thursday" name="Thursday Availability">
+                </div>
+                <div class="daySelection">
+                    <label for="friday">Friday</label>
+                    <input type="checkbox" value="friday" onclick="onAvailabilitySelected(this)">
+                    <input class="hidden" type="text" placeholder="Availability Here" id="friday" name="Friday Availability">
+                </div>
+                <div class="daySelection">
+                    <label for="saturday">Saturday</label>
+                    <input type="checkbox" value="saturday" onclick="onAvailabilitySelected(this)">
+                    <input class="hidden" type="text" placeholder="Availability Here" id="saturday" name="Saturday Availability">
+                </div>
+
                 <input id="resetButton" type="reset">
                 <input id="submitButton" type="submit">
                 <div id="submitStatus" class="hidden">Submitting Info...</div>

@@ -587,6 +587,11 @@ footer {
                 text-shadow: none;
             }
 
+            h2 {
+                text-align: center;
+                font-size: 3vmin;
+            }
+
             div {
                 display: flex;
                 flex-direction: column;
@@ -662,6 +667,28 @@ footer {
 
                 &.failed {
                     background-color: #db2323AF;
+                }
+            }
+
+            .daySelection {
+                flex-direction: row;
+                align-items: center;
+                justify-content: left;
+                padding-left: 10vmin;
+                box-sizing: border-box;
+                
+                label {
+                    width: 15vmin;
+                    font-size: 3vmin;
+                }
+
+                input:nth-of-type(1) {
+                    width: 3vmin;
+                    margin: 0 2vmin;
+                }
+
+                .hidden {
+                    display: none;
                 }
             }
         }

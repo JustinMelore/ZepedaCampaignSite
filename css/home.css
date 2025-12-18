@@ -491,6 +491,10 @@ footer div p {
 #support section:nth-of-type(3) form h1 {
   text-shadow: none;
 }
+#support section:nth-of-type(3) form h2 {
+  text-align: center;
+  font-size: 3vmin;
+}
 #support section:nth-of-type(3) form div {
   display: flex;
   flex-direction: column;
@@ -556,4 +560,22 @@ footer div p {
 }
 #support section:nth-of-type(3) form #submitStatus.failed {
   background-color: rgba(219, 35, 35, 0.6862745098);
+}
+#support section:nth-of-type(3) form .daySelection {
+  flex-direction: row;
+  align-items: center;
+  justify-content: left;
+  padding-left: 10vmin;
+  box-sizing: border-box;
+}
+#support section:nth-of-type(3) form .daySelection label {
+  width: 15vmin;
+  font-size: 3vmin;
+}
+#support section:nth-of-type(3) form .daySelection input:nth-of-type(1) {
+  width: 3vmin;
+  margin: 0 2vmin;
+}
+#support section:nth-of-type(3) form .daySelection .hidden {
+  display: none;
 }/*# sourceMappingURL=home.css.map */
