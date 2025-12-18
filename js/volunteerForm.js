@@ -28,6 +28,16 @@ form.addEventListener("submit", (e) => {
     );
 });
 
+form.addEventListener("reset", (e) => {
+    submissionStatus.className = "hidden"
+    let selections = document.getElementsByClassName("daySelection")
+    for(let i = 0; i < selections.length; i++) {
+        let availability = selections[i].getElementsByTagName("input")[1]
+        availability.className = "hidden"
+    }
+    document.getElementById("otherField").className = "hidden";
+})
+
 /**
  * Triggers when the user selects one of the volunteer type options and will either show or hide the "other" text field in the form
  * @param {*} selected The volunteer type that was selected
