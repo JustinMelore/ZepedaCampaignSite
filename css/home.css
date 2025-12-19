@@ -292,9 +292,9 @@ footer div p {
   background-color: #4B496B;
 }
 #about main img {
-  border: 2vmin solid #36344d;
-  border-radius: 500px;
-  width: 35vmin;
+  border: 1vmin solid #36344d;
+  border-radius: 30px;
+  width: 80vmin;
   margin-top: 5vmin;
 }
 #about main h1 {
