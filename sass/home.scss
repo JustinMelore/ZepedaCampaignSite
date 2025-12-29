@@ -694,3 +694,35 @@ footer {
         }
     }
 }
+
+#party {
+    background-color: $dark-blue;
+
+    main {
+        color: $light-background;
+        text-shadow: 0.25vmin 0.25vmin black;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    h1 {
+        text-align: center;
+        font-size: 8vmin;
+    }
+
+    h2 {
+        text-align: center;
+        font-size: 4.5vmin;
+    }
+
+    p {
+        box-sizing: border-box;
+        padding: 0 7vmin;
+        font-size: 4vmin;
+    }
+
+    .buttonLink {
+        text-shadow: none;
+    }
+}

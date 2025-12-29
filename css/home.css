@@ -578,4 +578,31 @@ footer div p {
 }
 #support section:nth-of-type(3) form .daySelection .hidden {
   display: none;
+}
+
+#party {
+  background-color: #36344d;
+}
+#party main {
+  color: #f2f3f6;
+  text-shadow: 0.25vmin 0.25vmin black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#party h1 {
+  text-align: center;
+  font-size: 8vmin;
+}
+#party h2 {
+  text-align: center;
+  font-size: 4.5vmin;
+}
+#party p {
+  box-sizing: border-box;
+  padding: 0 7vmin;
+  font-size: 4vmin;
+}
+#party .buttonLink {
+  text-shadow: none;
 }/*# sourceMappingURL=home.css.map */
