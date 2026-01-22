@@ -87,16 +87,34 @@ footer div a:hover {
   scale: 1.1;
 }
 footer div a img {
-  width: 15vmin;
   background-color: #f2f3f6;
   border-radius: 2vmin;
   padding: 1vmin;
 }
+@media screen and (orientation: portrait) {
+  footer div a img {
+    width: 10vmin;
+  }
+}
+@media screen and (orientation: landscape) {
+  footer div a img {
+    width: 15vmin;
+  }
+}
 footer div a svg {
-  width: 15vmin;
   background-color: #f2f3f6;
   border-radius: 2vmin;
   padding: 1vmin;
+}
+@media screen and (orientation: portrait) {
+  footer div a svg {
+    width: 10vmin;
+  }
+}
+@media screen and (orientation: landscape) {
+  footer div a svg {
+    width: 15vmin;
+  }
 }
 footer div a p {
   font-size: 2.5vmin;

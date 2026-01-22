@@ -100,14 +100,27 @@ footer {
             }
 
             img {
-                width: 15vmin;
+                @media screen and (orientation: portrait) {
+                    width: 10vmin;
+                }
+
+                @media screen and (orientation: landscape) {
+                    width: 15vmin;
+                }
+
                 background-color: $light-background;
                 border-radius: 2vmin;
                 padding: 1vmin;
             }
 
             svg {
-                width: 15vmin;
+                @media screen and (orientation: portrait) {
+                    width: 10vmin;
+                }
+
+                @media screen and (orientation: landscape) {
+                    width: 15vmin;
+                }
                 background-color: $light-background;
                 border-radius: 2vmin;
                 padding: 1vmin;
