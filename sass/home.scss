@@ -627,18 +627,24 @@ footer {
             box-sizing: border-box;
             padding: 0 7vmin;
             font-size: 3.5vmin;
-            display: flex;
-            flex-direction: column;
-            // text-align: center;
+            &:nth-of-type(1) {
+                flex-direction: column;
+                display: flex;
+            }
 
             span {
                 font-size: 5.5vmin;
-                // text-shadow: none;
                 color: $desert-yellow;
                 margin-bottom: 1vmin;
-                // text-align: center;
+            }
+
+            &:nth-of-type(2) {
+                span {
+                    font-size: 100%;
+                }
             }
         }
+
 
         .buttonLink {
             text-shadow: none;

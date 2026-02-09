@@ -490,13 +490,18 @@ footer p {
   box-sizing: border-box;
   padding: 0 7vmin;
   font-size: 3.5vmin;
-  display: flex;
+}
+#support section:nth-of-type(2) p:nth-of-type(1) {
   flex-direction: column;
+  display: flex;
 }
 #support section:nth-of-type(2) p span {
   font-size: 5.5vmin;
   color: #f9d706;
   margin-bottom: 1vmin;
+}
+#support section:nth-of-type(2) p:nth-of-type(2) span {
+  font-size: 100%;
 }
 #support section:nth-of-type(2) .buttonLink {
   text-shadow: none;
