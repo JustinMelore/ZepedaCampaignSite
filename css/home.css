@@ -42,10 +42,12 @@ nav div a {
   font-size: 3vmin;
   color: black;
   transition: scale 0.2s;
-  text-decoration: none;
 }
 nav div a:hover {
   scale: 1.1;
+}
+nav div a {
+  text-decoration: none;
 }
 
 footer {
@@ -165,11 +167,6 @@ footer p {
   filter: brightness(100%);
   scale: 1.1;
 }
-.media a img {
-  background-color: #f2f3f6;
-  border-radius: 2vmin;
-  padding: 1vmin;
-}
 @media screen and (orientation: portrait) {
   .media a img {
     width: 10vmin;
@@ -177,6 +174,21 @@ footer p {
 }
 @media screen and (orientation: landscape) {
   .media a img {
+    width: 15vmin;
+  }
+}
+.media a img {
+  background-color: #f2f3f6;
+  border-radius: 2vmin;
+  padding: 1vmin;
+}
+@media screen and (orientation: portrait) {
+  .media a svg {
+    width: 10vmin;
+  }
+}
+@media screen and (orientation: landscape) {
+  .media a svg {
     width: 15vmin;
   }
 }
@@ -184,16 +196,6 @@ footer p {
   background-color: #f2f3f6;
   border-radius: 2vmin;
   padding: 1vmin;
-}
-@media screen and (orientation: portrait) {
-  .media a svg {
-    width: 10vmin;
-  }
-}
-@media screen and (orientation: landscape) {
-  .media a svg {
-    width: 15vmin;
-  }
 }
 .media a p {
   font-size: 2.5vmin;
@@ -285,9 +287,10 @@ footer p {
   padding: 0;
 }
 #home #homeIntro .buttonLink {
-  width: 20vmin;
+  width: 35vmin;
   align-self: center;
   margin-top: 3vmin;
+  font-size: 4vmin;
 }
 #home #standFor {
   height: 70vmin;
