@@ -42,10 +42,12 @@ nav div a {
   font-size: 3vmin;
   color: black;
   transition: scale 0.2s;
-  text-decoration: none;
 }
 nav div a:hover {
   scale: 1.1;
+}
+nav div a {
+  text-decoration: none;
 }
 
 footer {
@@ -61,34 +63,143 @@ footer {
 footer h1 {
   font-size: 5vmin;
 }
-footer div {
+footer p {
+  font-size: 2vmin;
+}
+
+#news {
+  background-color: #36344d;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-top: 2vmin solid #7977a2;
+}
+#news h1 {
+  color: #f2f3f6;
+  font-size: 7vmin;
+  text-shadow: 0.25vmin 0.25vmin black;
+}
+#news h2 {
+  color: #f2f3f6;
+  text-shadow: 0.25vmin 0.25vmin black;
+  font-size: 4.5vmin;
+  margin-top: 0;
+}
+#news h2 a {
+  border: none;
+  padding: 0;
+  font-size: 4.5vmin;
+  color: #f9d706;
+  cursor: pointer;
+}
+#news a {
+  width: 100%;
+  text-decoration: none;
+  color: #f2f3f6;
+  box-sizing: border-box;
+  padding: 5vmin;
+  border-bottom: 1vmin solid #7977a2;
+  border-top: 1vmin solid #7977a2;
+}
+#news a h2 {
+  font-size: 4vmin;
+  text-shadow: 0.25vmin 0.25vmin black;
+}
+#news a p {
+  font-size: 2vmin;
+  font-style: italic;
+}
+@media screen and (orientation: landscape) {
+  #news a div {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  #news a div p {
+    width: 50%;
+    font-size: 3vmin;
+    font-style: normal;
+  }
+  #news a img {
+    max-height: 40vmin;
+  }
+}
+@media screen and (orientation: portrait) {
+  #news a div {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+  }
+  #news a div p {
+    width: 100%;
+    font-size: 3vmin;
+    font-style: normal;
+  }
+  #news a img {
+    width: 80%;
+  }
+}
+
+.media {
   display: flex;
   justify-content: space-evenly;
-  width: 60%;
 }
-footer div a {
+@media screen and (orientation: landscape) {
+  .media {
+    width: 80%;
+  }
+}
+@media screen and (orientation: portrait) {
+  .media {
+    width: 100%;
+  }
+}
+.media a {
   display: flex;
   flex-direction: column;
   align-items: center;
   filter: brightness(80%);
   transition: filter 0.1s, scale 0.1s;
 }
-footer div a:hover {
+.media a:hover {
   filter: brightness(100%);
   scale: 1.1;
 }
-footer div a img {
-  width: 15vmin;
+@media screen and (orientation: portrait) {
+  .media a img {
+    width: 10vmin;
+  }
+}
+@media screen and (orientation: landscape) {
+  .media a img {
+    width: 15vmin;
+  }
+}
+.media a img {
   background-color: #f2f3f6;
   border-radius: 2vmin;
   padding: 1vmin;
 }
-footer div a p {
+@media screen and (orientation: portrait) {
+  .media a svg {
+    width: 10vmin;
+  }
+}
+@media screen and (orientation: landscape) {
+  .media a svg {
+    width: 15vmin;
+  }
+}
+.media a svg {
+  background-color: #f2f3f6;
+  border-radius: 2vmin;
+  padding: 1vmin;
+}
+.media a p {
   font-size: 2.5vmin;
   width: auto;
-}
-footer div p {
-  font-size: 0.75vmin;
 }
 
 .buttonLink {
@@ -176,9 +287,10 @@ footer div p {
   padding: 0;
 }
 #home #homeIntro .buttonLink {
-  width: 20vmin;
+  width: 35vmin;
   align-self: center;
   margin-top: 3vmin;
+  font-size: 4vmin;
 }
 #home #standFor {
   height: 70vmin;
@@ -209,73 +321,6 @@ footer div p {
   width: 30vmin;
   text-align: center;
   text-shadow: none;
-}
-#home #news {
-  background-color: #36344d;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  border-top: 2vmin solid #7977a2;
-}
-#home #news h1 {
-  color: #f2f3f6;
-  font-size: 7vmin;
-  text-shadow: 0.25vmin 0.25vmin black;
-}
-#home #news h2 {
-  color: #f2f3f6;
-  text-shadow: 0.25vmin 0.25vmin black;
-  font-size: 4.5vmin;
-  margin-top: 0;
-}
-#home #news a {
-  width: 100%;
-  text-decoration: none;
-  color: #f2f3f6;
-  box-sizing: border-box;
-  padding: 5vmin;
-  border-bottom: 1vmin solid #7977a2;
-  border-top: 1vmin solid #7977a2;
-}
-#home #news a h2 {
-  font-size: 4vmin;
-  text-shadow: 0.25vmin 0.25vmin black;
-}
-#home #news a p {
-  font-size: 2vmin;
-  font-style: italic;
-}
-@media screen and (orientation: landscape) {
-  #home #news a div {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-  }
-  #home #news a div p {
-    width: 50%;
-    font-size: 3vmin;
-    font-style: normal;
-  }
-  #home #news a img {
-    max-height: 40vmin;
-  }
-}
-@media screen and (orientation: portrait) {
-  #home #news a div {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    flex-direction: column;
-    align-items: center;
-  }
-  #home #news a div p {
-    width: 100%;
-    font-size: 3vmin;
-    font-style: normal;
-  }
-  #home #news a img {
-    width: 80%;
-  }
 }
 
 #about {
@@ -448,13 +493,18 @@ footer div p {
   box-sizing: border-box;
   padding: 0 7vmin;
   font-size: 3.5vmin;
-  display: flex;
+}
+#support section:nth-of-type(2) p:nth-of-type(1) {
   flex-direction: column;
+  display: flex;
 }
 #support section:nth-of-type(2) p span {
   font-size: 5.5vmin;
   color: #f9d706;
   margin-bottom: 1vmin;
+}
+#support section:nth-of-type(2) p:nth-of-type(2) span {
+  font-size: 100%;
 }
 #support section:nth-of-type(2) .buttonLink {
   text-shadow: none;
@@ -580,29 +630,59 @@ footer div p {
   display: none;
 }
 
-#party {
+#newsPage {
   background-color: #36344d;
 }
-#party main {
+#newsPage #socials {
   color: #f2f3f6;
   text-shadow: 0.25vmin 0.25vmin black;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  box-sizing: border-box;
+  padding: 5vmin;
 }
-#party h1 {
+#newsPage #socials h1 {
+  box-sizing: border-box;
   text-align: center;
   font-size: 8vmin;
 }
-#party h2 {
-  text-align: center;
-  font-size: 4.5vmin;
-}
-#party p {
+#newsPage #socials h2 {
   box-sizing: border-box;
-  padding: 0 7vmin;
-  font-size: 4vmin;
+  font-size: 5vmin;
+  padding: 2vmin 15vmin;
+  text-align: center;
 }
-#party .buttonLink {
-  text-shadow: none;
+#newsPage #socials .media {
+  border: none;
+  width: 100%;
+  box-sizing: border-box;
+  justify-content: space-evenly;
+}
+#newsPage #socials .media a {
+  border: none;
+  width: auto;
+  padding: 0;
+}
+@media screen and (orientation: portrait) {
+  #newsPage #socials .media a img {
+    max-width: 10vmin;
+  }
+}
+@media screen and (orientation: landscape) {
+  #newsPage #socials .media a img {
+    max-width: 15vmin;
+  }
+}
+@media screen and (orientation: portrait) {
+  #newsPage #socials .media a svg {
+    max-width: 10vmin;
+  }
+}
+@media screen and (orientation: landscape) {
+  #newsPage #socials .media a svg {
+    max-width: 15vmin;
+  }
+}
+#newsPage #news a:nth-of-type(1) {
+  border-top: none;
 }/*# sourceMappingURL=home.css.map */
