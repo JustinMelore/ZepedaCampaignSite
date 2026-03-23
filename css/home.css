@@ -267,6 +267,9 @@ footer p {
 #home #homeIntro a {
   width: 25%;
   transition: scale 0.1s;
+  color: #f2f3f6;
+  text-decoration: none;
+  font-size: 3.5vmin;
 }
 #home #homeIntro a:hover {
   scale: 1.1;
