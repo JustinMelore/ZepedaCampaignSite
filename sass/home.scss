@@ -862,3 +862,38 @@ footer {
         }
     }
 }
+
+#party {
+
+    min-height: 100%;
+
+    main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        img {
+            width: 50vmin;
+        }
+
+        h2 {
+            text-align: center;
+            font-size: 3vmin;
+            box-sizing: border-box;
+            padding: 0 3vmin;
+            font-style: italic;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 6vmin;
+        }
+
+        p {
+            box-sizing: border-box;
+            padding: 7vmin 7vmin;
+            font-size: 3vmin;
+        }
+    }
+
+}

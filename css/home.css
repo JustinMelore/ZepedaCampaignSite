@@ -685,4 +685,32 @@ footer p {
 }
 #newsPage #news a:nth-of-type(1) {
   border-top: none;
+}
+
+#party {
+  min-height: 100%;
+}
+#party main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#party main img {
+  width: 50vmin;
+}
+#party main h2 {
+  text-align: center;
+  font-size: 3vmin;
+  box-sizing: border-box;
+  padding: 0 3vmin;
+  font-style: italic;
+}
+#party main h1 {
+  text-align: center;
+  font-size: 6vmin;
+}
+#party main p {
+  box-sizing: border-box;
+  padding: 7vmin 7vmin;
+  font-size: 3vmin;
 }/*# sourceMappingURL=home.css.map */
