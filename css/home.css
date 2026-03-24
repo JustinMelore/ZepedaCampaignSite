@@ -691,15 +691,33 @@ footer p {
 }
 
 #party {
-  min-height: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-image: url("../images/desert3.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  backdrop-filter: blur(2px);
+}
+@media screen and (orientation: portrait) {
+  #party {
+    background-size: 250%;
+  }
 }
 #party main {
   display: flex;
   flex-direction: column;
   align-items: center;
+  color: #f2f3f6;
+  text-shadow: 0.25vmin 0.25vmin black;
 }
 #party main img {
   width: 50vmin;
+  background-color: #f2f3f6;
+  border-radius: 100%;
+  padding: 5vmin;
+  box-sizing: border-box;
+  margin-bottom: 2vmin;
 }
 #party main h2 {
   text-align: center;
@@ -707,6 +725,11 @@ footer p {
   box-sizing: border-box;
   padding: 0 3vmin;
   font-style: italic;
+}
+@media screen and (orientation: portrait) {
+  #party main h2 {
+    font-size: 4.5vmin;
+  }
 }
 #party main h1 {
   text-align: center;
@@ -716,4 +739,12 @@ footer p {
   box-sizing: border-box;
   padding: 7vmin 7vmin;
   font-size: 3vmin;
+}
+@media screen and (orientation: portrait) {
+  #party main p {
+    font-size: 4vmin;
+  }
+}
+#party footer {
+  margin-top: auto;
 }/*# sourceMappingURL=home.css.map */

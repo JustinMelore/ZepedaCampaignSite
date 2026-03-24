@@ -869,15 +869,32 @@ footer {
 
 #party {
 
-    min-height: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-image: url("../images/desert3.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    backdrop-filter: blur(2px);
+
+    @media screen and (orientation: portrait) {
+        background-size: 250%;
+    }
 
     main {
         display: flex;
         flex-direction: column;
         align-items: center;
+        color: $light-background;
+        text-shadow: 0.25vmin 0.25vmin black;
 
         img {
             width: 50vmin;
+            background-color: $light-background;
+            border-radius: 100%;
+            padding: 5vmin;
+            box-sizing: border-box;
+            margin-bottom: 2vmin;
         }
 
         h2 {
@@ -886,6 +903,10 @@ footer {
             box-sizing: border-box;
             padding: 0 3vmin;
             font-style: italic;
+
+            @media screen and (orientation: portrait) {
+                font-size: 4.5vmin;
+            }
         }
 
         h1 {
@@ -897,7 +918,15 @@ footer {
             box-sizing: border-box;
             padding: 7vmin 7vmin;
             font-size: 3vmin;
+
+            @media screen and (orientation: portrait) {
+                font-size: 4vmin;
+            }
         }
+    }
+
+    footer {
+        margin-top: auto;
     }
 
 }
