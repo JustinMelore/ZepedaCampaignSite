@@ -358,6 +358,10 @@ footer {
             width: 25%;
             transition: scale 0.1s;
 
+            color: $light-background;
+            text-decoration: none;
+            font-size: 3.5vmin;
+
             &:hover {
                 scale: 1.1;
             }
