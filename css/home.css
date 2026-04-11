@@ -250,7 +250,7 @@ footer p {
   align-items: center;
 }
 #home #homeIntro div {
-  flex-direction: row;
+  flex-direction: column;
   display: flex;
   width: 100%;
   justify-content: space-evenly;
@@ -265,8 +265,9 @@ footer p {
   font-size: 5vmin;
 }
 #home #homeIntro a {
-  width: 25%;
+  width: 15vmax;
   transition: scale 0.1s;
+  margin-top: 1.5vmin;
   color: #f2f3f6;
   text-decoration: none;
   font-size: 3.5vmin;
@@ -444,43 +445,6 @@ footer p {
 #support section {
   color: #f2f3f6;
 }
-#support section:nth-of-type(1) {
-  min-height: 70vmin;
-  display: flex;
-  align-items: center;
-}
-#support section:nth-of-type(1) div {
-  width: 75%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  box-sizing: border-box;
-  padding: 3vmin;
-  text-shadow: black 0.25vmin 0.25vmin;
-}
-#support section:nth-of-type(1) div h1 {
-  font-size: 7vmin;
-}
-#support section:nth-of-type(1) div p {
-  font-size: 4vmin;
-}
-#support section:nth-of-type(1) div span {
-  font-size: 120%;
-  color: #f9d706;
-}
-#support section:nth-of-type(1) div .buttonLink {
-  width: 25vmin;
-  text-align: center;
-  text-shadow: none;
-}
-#support section:nth-of-type(1) img {
-  width: 20%;
-  box-sizing: border-box;
-  padding: 2vmin;
-  border-radius: 300px;
-  background-color: #f2f3f6;
-}
 #support section:nth-of-type(2) {
   display: flex;
   flex-direction: column;
@@ -495,7 +459,8 @@ footer p {
 #support section:nth-of-type(2) p {
   box-sizing: border-box;
   padding: 0 7vmin;
-  font-size: 3.5vmin;
+  font-size: 4vmin;
+  text-align: center;
 }
 #support section:nth-of-type(2) p:nth-of-type(1) {
   flex-direction: column;
